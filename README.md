@@ -13,6 +13,20 @@ Building scalable, asynchronous, API-driven systems with FastAPI, Django, Postgr
 
 ---
 
+## 🚀 Featured project
+
+**[RailSphere](https://github.com/rohantiwari9573/railsphere-backend)** — a full-stack Indian Railways platform, built solo end to end: React + FastAPI, a 500K+ row PostgreSQL dataset, and a real production deployment with the infrastructure to match.
+
+- 🎟️ A full IRCTC-style ticket booking system — live seat allocation, automatic waitlisting with cross-booking promotion on cancellation, mock payment, PNR lookup, e-ticket with QR code
+- 📈 Real observability wired into every request: OpenTelemetry distributed tracing (Jaeger), Prometheus + Grafana provisioned as code
+- ⚡ Redis cache-aside layer with a circuit breaker, a 500K-row table hash-partitioned across 8 partitions, gzip + HTTP caching
+- 🔐 JWT auth, field-level encryption at rest, hardened EC2 deployment
+- 🚀 CI/CD — every push runs the full test suite against a live Postgres container, then auto-deploys
+
+**[Live app](https://railsphere-frontend.vercel.app)** &nbsp;·&nbsp; **[API docs](https://16-176-230-154.nip.io/docs)** &nbsp;·&nbsp; **[Source](https://github.com/rohantiwari9573/railsphere-backend)**
+
+---
+
 ## 🛠️ Toolkit
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
