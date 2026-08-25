@@ -79,7 +79,7 @@ On the AI/ML side, shipping LLM-powered assistants with Groq and privacy-preserv
 | **[FinSight](https://github.com/rohantiwari9573/FinSight)** | AI-powered financial assistant — real-time transaction tracking, AI-driven anomaly/trend insights, a natural-language finance chatbot, and PDF report exports | Node.js · Express · MongoDB · Groq LLM · JWT |
 | **[Federated Symptom Checker](https://github.com/saarcasm/Federated-Symptom-Checker)** (contributor) | Privacy-preserving, on-device symptom diagnosis across tabular, skin-image, and respiratory-audio models — built federated coordination and server-side aggregation (FedAvg) | PyTorch · Flower · Opacus · FastAPI |
 | **[E-Commerce Backend](https://github.com/rohantiwari9573/ecommerce-backend)** | RESTful backend for product lifecycles, carts, and multi-step checkout — Redis caching cut read latency 40%, Celery/RabbitMQ handle async invoicing, 90%+ test coverage | FastAPI · PostgreSQL · Redis · Celery · RabbitMQ · Pytest |
-| **[Task Manager API](https://github.com/rohantiwari9573/task-manager)** | Multi-tenant task management API with database-level tenant isolation and advanced server-side filtering/pagination | Django REST Framework · JWT · MongoDB |
+| **[Vector Tasks](https://github.com/rohantiwari9573/task-manager)** | Multi-tenant task management API with database-level tenant isolation and advanced server-side filtering/pagination | Django REST Framework · JWT · MongoDB |
 
 ---
 
