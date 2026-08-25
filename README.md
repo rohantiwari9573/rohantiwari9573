@@ -2,9 +2,11 @@
 
 # Hi, I'm Rohan 👋
 
-**Backend Developer** — Final-year B.Tech, CSE (AI & ML), AKGEC Ghaziabad
+**Backend Developer & AI/ML Engineer** — Final-year B.Tech, CSE (AI & ML) student
 
 Building scalable, asynchronous, API-driven systems with FastAPI, Django, PostgreSQL, Redis, and Celery.
+
+Also building AI-powered systems — FinSight, an AI financial assistant, and a privacy-preserving Federated Symptom Checker using Federated Learning and Differential Privacy — with Groq LLM, PyTorch, and Flower.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rohan_Tiwari-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohan-tiwari-012106283/)
 [![Email](https://img.shields.io/badge/Email-rohantiwari166%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:rohantiwari166@gmail.com)
@@ -34,6 +36,8 @@ Building scalable, asynchronous, API-driven systems with FastAPI, Django, Postgr
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
 ![OOP](https://img.shields.io/badge/-OOP-4B8BBE?style=flat-square)
 
 **Data & Messaging**
@@ -60,6 +64,9 @@ Building scalable, asynchronous, API-driven systems with FastAPI, Django, Postgr
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 
 **AI/ML & Problem Solving**
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Flower](https://img.shields.io/badge/-Flower_(Federated_Learning)-1F41BB?style=flat-square)
+![Opacus](https://img.shields.io/badge/-Opacus_(Differential_Privacy)-4B8BBE?style=flat-square)
 ![Groq LLM](https://img.shields.io/badge/-Groq_LLM-F55036?style=flat-square)
 ![DSA](https://img.shields.io/badge/-DSA-4B8BBE?style=flat-square)
 
@@ -69,7 +76,8 @@ Building scalable, asynchronous, API-driven systems with FastAPI, Django, Postgr
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[FinSight](https://github.com/rohantiwari9573/FinSight)** | AI-powered financial assistant — automated expense categorization, multi-variable cash-flow forecasting, anomaly detection, and an LLM assistant (Groq) for natural-language financial queries | FastAPI · NumPy · Groq LLM · AWS S3 |
+| **[FinSight](https://github.com/rohantiwari9573/FinSight)** | AI-powered financial assistant — real-time transaction tracking, AI-driven anomaly/trend insights, a natural-language finance chatbot, and PDF report exports | Node.js · Express · MongoDB · Groq LLM · JWT |
+| **[Federated Symptom Checker](https://github.com/saarcasm/Federated-Symptom-Checker)** (contributor) | Privacy-preserving, on-device symptom diagnosis across tabular, skin-image, and respiratory-audio models — built federated coordination and server-side aggregation (FedAvg) | PyTorch · Flower · Opacus · FastAPI |
 | **[E-Commerce Backend](https://github.com/rohantiwari9573/ecommerce-backend)** | RESTful backend for product lifecycles, carts, and multi-step checkout — Redis caching cut read latency 40%, Celery/RabbitMQ handle async invoicing, 90%+ test coverage | FastAPI · PostgreSQL · Redis · Celery · RabbitMQ · Pytest |
 | **[Task Manager API](https://github.com/rohantiwari9573/task-manager)** | Multi-tenant task management API with database-level tenant isolation and advanced server-side filtering/pagination | Django REST Framework · JWT · MongoDB |
 
