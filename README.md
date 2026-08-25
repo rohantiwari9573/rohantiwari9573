@@ -6,7 +6,7 @@
 
 Building scalable, asynchronous, API-driven systems with FastAPI, Django, PostgreSQL, Redis, and Celery.
 
-Also building AI-powered systems — FinSight, an AI financial assistant, and a privacy-preserving Federated Symptom Checker using Federated Learning and Differential Privacy — with Groq LLM, PyTorch, and Flower.
+Also building AI-powered systems — FinSight, an AI financial assistant with a Groq LLM chatbot, and a privacy-preserving Federated Symptom Checker using Federated Learning (PyTorch, Flower) and Differential Privacy.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rohan_Tiwari-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohan-tiwari-012106283/)
 [![Email](https://img.shields.io/badge/Email-rohantiwari166%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:rohantiwari166@gmail.com)
