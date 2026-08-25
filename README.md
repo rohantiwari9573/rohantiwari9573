@@ -9,7 +9,7 @@ Building scalable, asynchronous, API-driven systems with FastAPI, Django, Postgr
 On the AI/ML side, shipping LLM-powered assistants with Groq and privacy-preserving federated learning systems with PyTorch, Flower, and differential privacy.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rohan_Tiwari-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rohan-tiwari-012106283/)
-[![Email](https://img.shields.io/badge/Email-rohantiwari166%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:rohantiwari166@gmail.com)
+[![Email](https://img.shields.io/badge/Email-rohantiwari166%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=rohantiwari166@gmail.com)
 
 </div>
 
