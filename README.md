@@ -150,13 +150,13 @@ Threat-intelligence platform for correlating **actors, identities, infrastructur
 
 ### 📋 Vector Tasks — Multi-Tenant Task Management API
 
-**[Vector Tasks](https://github.com/rohantiwari9573/task-manager)** — multi-tenant task management API focused on secure data isolation and efficient querying.
+**[Vector Tasks](https://github.com/rohantiwari9573/Vector-Tasks)** — multi-tenant task management API focused on secure data isolation and efficient querying.
 
 * 🔒 Database-level tenant isolation
 * 🔍 Advanced server-side filtering and pagination
 * 🔐 JWT authentication
 
-**Tech:** Django REST Framework · MongoDB · JWT
+**Tech:** Django REST Framework · PostgreSQL · JWT
 
 ---
 
