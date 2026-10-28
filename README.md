@@ -41,6 +41,8 @@ On the AI/ML side, I've worked with **LLM-powered applications, federated learni
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
 
@@ -48,9 +50,10 @@ On the AI/ML side, I've worked with **LLM-powered applications, federated learni
 
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-D71F00?style=flat-square)
+![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
+![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
 ![Celery](https://img.shields.io/badge/-Celery-37814A?style=flat-square&logo=celery&logoColor=white)
 
 ### APIs, Security & Testing
@@ -68,6 +71,8 @@ On the AI/ML side, I've worked with **LLM-powered applications, federated learni
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-CI/CD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/-Render-46E3B7?style=flat-square&logo=render&logoColor=black)
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/-OpenTelemetry-425CC7?style=flat-square)
@@ -78,59 +83,63 @@ On the AI/ML side, I've worked with **LLM-powered applications, federated learni
 ![Flower](https://img.shields.io/badge/-Flower_Federated_Learning-1F41BB?style=flat-square)
 ![Opacus](https://img.shields.io/badge/-Opacus_Differential_Privacy-4B8BBE?style=flat-square)
 ![Groq](https://img.shields.io/badge/-Groq_LLM-F55036?style=flat-square&logo=groq&logoColor=white)
+![Gemini](https://img.shields.io/badge/-Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![RAG](https://img.shields.io/badge/-RAG_Pipelines-0F766E?style=flat-square)
 
 ---
 
 # 🚀 Projects
 
-### 🔍 Argus — Threat Intelligence & Actor Attribution Platform
+### 🧠 Retriva — Multi-Tenant RAG Knowledge Platform
 
-Threat-intelligence platform for correlating **actors, identities, infrastructure, and activities** into unified investigative profiles.
+**[Retriva](https://github.com/rohantiwari9573/retriva)** — organizations upload internal documents and ask questions, getting grounded, streamed answers with verified source citations.
 
-* 🔗 Entity and infrastructure correlation using graph-based relationships
-* 🧠 Attribution signals, confidence scoring, and evidence provenance
-* 📊 Actor dashboards, activity timelines, relationship graphs, and investigation workflows
+* 🔎 Hybrid retrieval: pgvector similarity + PostgreSQL full-text search fused with Reciprocal Rank Fusion
+* ⚡ Async ingestion pipeline (PDF/DOCX/TXT/MD) with byte-level file validation and idempotent retries
+* 🔐 Org-scoped RBAC, rotating refresh tokens with replay detection, SSE streaming with citation validation
+* 📏 RAG evaluation harness (Recall@K, MRR, nDCG, LLM-as-judge, prompt-injection checks) · ~400 backend tests
 
-**Tech:** Python · FastAPI · React · Neo4j · PostgreSQL · MISP · Tor Onionoo · Docker
+**Tech:** FastAPI · Next.js · PostgreSQL + pgvector · Celery · Redis · Gemini · OpenTelemetry · Docker
 
-**[Live app](https://argus-frontend-dun.vercel.app/)** &nbsp;·&nbsp; **[API docs](https://api.rohantiwari.me/docs)** &nbsp;·&nbsp; **[Source](https://github.com/rohantiwari9573/SIH-26)**
+**[Live app](https://retriva-nine.vercel.app)** &nbsp;·&nbsp; **[Source](https://github.com/rohantiwari9573/retriva)**
+
+---
+
+### 🔍 Argus — Dark-Web Threat Actor Attribution
+
+**[Argus](https://github.com/rohantiwari9573/SIH-26)** — links pseudonymous dark-web personas across platforms and explains the evidence behind every attribution (Smart India Hackathon 2026, SIH26151).
+
+* 🔗 Neo4j relationship graph of handles, PGP keys and wallets + wallet clustering
+* ✍️ Stylometric authorship attribution (Burrows' Delta) and infrastructure fingerprinting
+* 📊 Weighted confidence scoring with full evidence provenance, async re-analysis via Celery, CSV/JSON/PDF exports
+
+**Tech:** Python · FastAPI · React · TypeScript · Neo4j · PostgreSQL · Celery · Redis
+
+**[Live app](https://argus-frontend-dun.vercel.app/)** &nbsp;·&nbsp; **[API docs](https://argus-api-d6s7.onrender.com/docs)** &nbsp;·&nbsp; **[Source](https://github.com/rohantiwari9573/SIH-26)**
 
 ---
 
 ### 🚆 RailSphere — Full-Stack Railway Booking Platform
 
-**[RailSphere](https://github.com/rohantiwari9573/railsphere-backend)** — full-stack Indian Railways-inspired booking platform built end to end with a **500K+ row PostgreSQL dataset**.
+**[RailSphere](https://github.com/rohantiwari9573/railsphere-backend)** — Indian Railways-inspired booking platform built end to end on a **500K+ row PostgreSQL dataset**.
 
-* 🎟️ Live seat allocation, automatic waitlisting, PNR lookup, e-tickets & mock payments
-* ⚡ Redis caching + PostgreSQL hash partitioning across 8 partitions
-* 📈 OpenTelemetry/Jaeger tracing + Prometheus/Grafana monitoring
-* 🔐 JWT authentication, field-level encryption, Dockerized AWS deployment & CI/CD
+* 🎟️ Live seat allocation, automatic waitlisting with cross-booking promotion, PNR lookup, e-tickets
+* ⚡ Redis cache-aside with circuit breaker, a 415K-row table hash-partitioned across 8 partitions, trigram search
+* 📈 OpenTelemetry/Jaeger tracing, Prometheus/Grafana monitoring, GraphQL + WebSockets alongside REST
+* 🔐 JWT auth, Argon2 hashing, field-level encryption for PII · 72 tests in CI
 
-**Tech:** React · FastAPI · PostgreSQL · Redis · Docker · AWS · OpenTelemetry · Prometheus · Grafana
+**Tech:** React · TypeScript · FastAPI · PostgreSQL · Redis · Docker · OpenTelemetry · Prometheus · Grafana
 
-**[Live App](https://railsphere-frontend.vercel.app)** · **[API Docs](https://16-176-230-154.nip.io/docs)** · **[Source](https://github.com/rohantiwari9573/railsphere-backend)**
-
----
-
-### 💰 FinSight — AI-Powered Financial Assistant
-
-**[FinSight](https://github.com/rohantiwari9573/FinSight)** — financial platform combining transaction analytics with an LLM-powered assistant.
-
-* 📊 Transaction tracking with AI-driven anomaly and trend insights
-* 🤖 Natural-language finance chatbot
-* 📄 Automated PDF financial reports
-
-**Tech:** Node.js · Express · MongoDB · Groq LLM · JWT
+**[Live app](https://railsphere-frontend.vercel.app)** &nbsp;·&nbsp; **[API docs](https://railsphere-api.onrender.com/docs)** &nbsp;·&nbsp; **[Source](https://github.com/rohantiwari9573/railsphere-backend)**
 
 ---
 
-### 🧬 Federated Symptom Checker — Privacy-Preserving ML
+### 🧬 Federated Symptom Checker — Privacy-Preserving ML *(team project)*
 
-**[Federated Symptom Checker](https://github.com/saarcasm/Federated-Symptom-Checker)** — federated ML system for **tabular, skin-image, and respiratory-audio** diagnosis without centralizing raw client data.
+**[Federated Symptom Checker](https://github.com/rohantiwari9573/federated-symptom-checker)** — diagnostic models trained with Federated Learning + Differential Privacy across tabular, skin-image and respiratory-audio data.
 
-* 🔐 Federated training with FedAvg aggregation
-* 🧠 Multimodal PyTorch models with differential privacy
-* ⚙️ Federated coordination and API integration
+* 🔐 FedAvg coordination and server aggregation with Flower (my role in the team)
+* 🧪 Reproduced the paper's privacy–utility results exactly; on-device browser inference with 984/984 PyTorch parity
 
 **Tech:** PyTorch · Flower · Opacus · FastAPI
 
@@ -138,25 +147,28 @@ Threat-intelligence platform for correlating **actors, identities, infrastructur
 
 ### 🛒 E-Commerce Backend
 
-**[E-Commerce Backend](https://github.com/rohantiwari9573/ecommerce-backend)** — RESTful commerce backend for products, carts, and multi-step checkout.
+**[E-Commerce Backend](https://github.com/rohantiwari9573/ecommerce-backend)** — REST API for products, carts and orders.
 
-* ⚡ Redis caching reduced read latency by **40%**
-* 📨 Celery/RabbitMQ for asynchronous invoicing
-* 🧪 **90%+ test coverage** with Pytest
+* ⚡ Redis product cache with write-through invalidation and fail-open per-IP rate limiting
+* 📨 Celery background jobs on order placement · JWT auth · Dockerized multi-service setup
 
-**Tech:** FastAPI · PostgreSQL · Redis · Celery · RabbitMQ · Pytest
+**Tech:** FastAPI · PostgreSQL · Redis · Celery · Docker &nbsp;·&nbsp; **[API docs](https://ecommerce-backend-spj8.onrender.com/docs)**
 
 ---
 
-### 📋 Vector Tasks — Multi-Tenant Task Management API
+### ✅ Vector Tasks
 
-**[Vector Tasks](https://github.com/rohantiwari9573/Vector-Tasks)** — multi-tenant task management API focused on secure data isolation and efficient querying.
+**[Vector Tasks](https://github.com/rohantiwari9573/Vector-Tasks)** — full-stack task manager with per-user data isolation, filtering/search/ordering, JWT auth and request throttling.
 
-* 🔒 Database-level tenant isolation
-* 🔍 Advanced server-side filtering and pagination
-* 🔐 JWT authentication
+**Tech:** Django REST Framework · React · PostgreSQL &nbsp;·&nbsp; **[Live app](https://task-manager-theta-nine-54.vercel.app)**
 
-**Tech:** Django REST Framework · PostgreSQL · JWT
+---
+
+### 💰 FinSight *(team project, contributor)*
+
+**[FinSight](https://github.com/rohantiwari9573/FinSight)** — AI financial assistant with transaction analytics, anomaly alerts, a Groq-powered finance chatbot and PDF reports.
+
+**Tech:** React · Node.js · Express · MongoDB · Groq &nbsp;·&nbsp; **[Live app](https://fin-sight-murex.vercel.app/)**
 
 ---
 
