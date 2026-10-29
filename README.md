@@ -171,10 +171,17 @@ On the AI/ML side, I've worked with **LLM-powered applications, federated learni
 
 # 🏅 Highlights
 
+* 🏆 **Smart India Hackathon 2026** — Participated; built [Argus](https://github.com/rohantiwari9573/SIH-26)
 * 🏆 **Smart India Hackathon 2025** — Cleared Round 1
 * 🥈 **College-Level Hackathon Finalist** — AI-based project
 * 🧮 **400+ DSA problems solved** across LeetCode, CodeChef & Codeforces
 * ⭐ **2★ CodeChef**
+
+### 📜 Certifications
+
+* **HackerRank** — Software Engineer Intern (Role Certification), Jul 2026
+* **HackerRank** — Python (Basic), Jul 2026
+* **Coding Blocks** — 40-Hour Training Program in Competitive Programming, AKGEC (Jun–Jul 2026)
 
 ---
 
